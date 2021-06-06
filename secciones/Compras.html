@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Catálogo M.I.G.A</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel = "preconnect" href = "https://fonts.gstatic.com">
+		<link href = "https://fonts.googleapis.com/css2? family = Poppins & display = swap" rel = "hoja de estilo ">
+
+		<link rel = "preconnect" href = "https://fonts.gstatic.com">
+
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+		<!------------------------------------SEO------------------------------------>
+
+		<meta name="description" content="Página sobre catálogo de compra para la mantención de gráficas en tiendas de Sodimac"> <!-- para que a página pueda ser buscada desde un explorador -->
+		<meta name="keywords" content="catálogo, sodimac, homecenter, mantanción, gráficas, mantención accesorios, flujo mesa, flujo estandar"> <!-- palabras claves de búsqueda -->
+		<meta name="author" content="Paulina González">
+
+
+		<!--------------------------------OPEN GRAPH--------------------------------->
+
+		<meta property="og:locale" content="es_es">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Página catálogo Miga">
+		<meta property="og:description" content="Visita el catálogo Miga">
+		<meta property="og:url" content="https://pauligonz.github.io/sitio_web_paulig/">
+		<meta property="og:image" content="https://www.sodimac.cl/sodimac-cl/"> <!-- 1 de 2, o imagen o video -->
+		<meta property="og:video" content="video/video.mp4"> <!-- 1 de 2, o imagen o video -->
+
+	</head>
+
+
+
+	<body>
+		<header>
+			<div>
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-between">
+					<div class="hijoNav">
+						<a class="navbar-brand" href="../index.html">
+							<img src="../Imagenes/casita sodimac.png" alt="logo" style="width:45px;">
+						</a>
+						<span class="navbar-text">Catálogo Miga
+						</span>
+					</div>
+					<form class="hijoNav form-inline-sm" action="/action_page.php">
+						<input class="form-control mr-sm-2" type="text" placeholder="Search">
+						<button class="btn btn-primary" type="submit">Search</button>
+					</form>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<div class="container">
+				<div class="divMainIndex">
+					<nav class="navbar navbar-expand-sm bg-light justify-content-center">
+						<ul class="nav nav-pills-sm">
+							<li class="nav-item">
+								<a class="nav-link active" href="Compras.html" id="go-compras">Compras</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="Categorias.html" id="go-categoria">Categorías</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="Mis pedidos.html">Mis pedidos</a>
+							</li>
+							<li class="nav-item">
+								<a id="contactanos" class="nav-link" href="Contactanos.html">Contáctanos</a>
+							</li>
+							<li class="nav-item dropdown"> <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Feedback</a>
+								
+								<div class="dropdown-menu">	
+									<a href="feedback.html" class="dropdown-item">Que te gustó</a>
+									<a href="feedback.html" class="dropdown-item">Sugerencias</a>	
+								</div>  
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../index.html">
+									<i class="fas fa-home"></i>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+	
+			<div class="container padreDivCompras"> 
+				<div class="hijo1" id="hijo1"> 
+					<div class="homecenter">
+						<p class="textoHomecenter" onclick="llamarDatos()"> Categorías aréa HC </p>
+
+						<select class="custom-select" onchange="cardsGraficasCategoria(event)">
+							<option id="accesoSala" selected>Acceso Sala</option>
+							<option id="acceso1" value="1">Tras Cajas</option>
+							<option id="acceso2" value="3">Hornos y Encimeras</option>
+							<option id="acceso3" value="2">Refrigeradores</option>
+							<option id="acceso4" value="4">Electrodomésticos</option>
+						</select>
+					</div>
+
+					<div>
+						<select class="custom-select">
+						  <option selected>Menaje</option>
+						  <option value="1">Lozas</option>
+						  <option value="2">Contenedores</option>
+						  <option value="3">Vasos y copas</option>
+						  <option value="4">Utensilios</option>
+						  <option value="5">Baterías de cocina</option>
+						  <option value="6">Textil cocina</option>
+						  <option value="7">Sartenes y Wok</option>
+						</select>
+					</div>
+
+					<div>
+						<select class="custom-select">
+						  <option selected>Muebles</option>
+						  <option value="1">Futones</option>
+						  <option value="2">Escritorios</option>
+						  <option value="3">Closet</option>
+						  <option value="4">Sillas</option>
+						</select>
+					</div>
+
+					<div>
+						<select class="custom-select">
+						  <option selected>Organización</option>
+						  <option value="1">Dormitorio</option>
+						  <option value="2">Escritorio</option>
+						  <option value="3">Infantil</option>
+						  <option value="4">Cocina</option>
+						  <option value="5">Baño</option>
+						  <option value="6">Viaje</option>
+						  <option value="7">Mudan</option>
+						</select>
+					</div>
+
+					<div>
+						<select class="custom-select">
+						  <option selected>Iluminación</option>
+						  <option value="1">Industrial</option>
+						  <option value="2">Lámpara de mesa</option>
+						  <option value="3">Lámpara de pie</option>
+						  <option value="4">Lámpara de escritorio</option>
+						  <option value="5">Focos</option>
+						  <option value="6">Faroles</option>
+						  <option value="7">Ventiladores</option>
+						</select>
+					</div>
+
+					<div>
+						<select class="custom-select">
+						  <option selected>Baño</option>
+						  <option value="1">Sanitarios</option>
+						  <option value="2">Accesorios de ducha</option>
+						  <option value="3">Deco baño</option>
+						  <option value="4">Calefon y termos</option>
+						  <option value="5">Grifería de baño</option>
+						  <option value="6">Lavamanos y Vanitorios</option>
+						  <option value="7">Duchas y Cabinas</option>
+						  <option value="8">Seguridad Baño</option>
+						</select>
+					</div>
+
+					<div>
+						<select class="custom-select">
+						  <option selected>Cocina</option>
+						  <option value="1">Encimeras y Hornos</option>
+						  <option value="2">Equipos de cocina</option>
+						  <option value="3">Lavaplatos</option>
+						  <option value="4">Muebles de cocina</option>
+						  <option value="5">Grifería de cocina</option>
+						  <option value="6">Cubiertas de cocina</option>
+						  <option value="7">Lavavajillas</option>
+						  <option value="8">Campanas</option>
+						</select>
+					</div>
+
+					<div>
+						<select class="custom-select">
+						  <option selected>Pisos y Revestimientos</option>
+						  <option value="1">Cerámicas</option>
+						  <option value="2">Porcelanatos</option>
+						  <option value="3">Piedras y Enchapes</option>
+						  <option value="4">Pisos Flotantes</option>
+						  <option value="5">Pisos de madera</option>
+						  <option value="6">Pisos Vinílicos</option>
+						  <option value="7">Mosaicos y decorados</option>
+						  <option value="8">Siding</option>
+						</select>
+					</div>
+
+					<div>
+						<select class="custom-select">
+						  <option selected>Pinturas</option>
+						  <option value="1">Esmalte al agua</option>
+						  <option value="2">Pintura para Interior</option>
+						  <option value="3">Pintura para Exterior</option>
+						  <option value="4">Protector de Madera</option>
+						  <option value="5">Rodillos y Brochas</option>
+						  <option value="6">Lijas</option>
+						  <option value="7">Diluyentes</option>
+						  <option value="8">Barniz</option>
+						</select>
+					</div>
+
+					<div class="constructor">
+						<p> Categorías aréa CO </p>
+						<select class="custom-select">
+						  <option selected>Ferretería</option>
+						  <option value="1">Seguridad</option>
+						  <option value="2">Fijaciones</option>
+						  <option value="3">Quincallería</option>
+						</select>
+					</div>
+
+					<div>
+						<select class="custom-select">
+						  <option selected>Gasfitería</option>
+						  <option value="1">Bombas y Motobombas</option>
+						  <option value="2">Cañerías</option>
+						  <option value="3">Llaves y Válvulas</option>
+						  <option value="4">Tubos y fitting</option>
+						  <option value="5">Drenajes</option>
+						</select>
+					</div>
+
+					<div>
+						<select class="custom-select">
+						  <option selected>Electricidad</option>
+						  <option value="1">Enchufes y Placas</option>
+						  <option value="2">Cables y Alambres</option>
+						  <option value="3">Canalización</option>
+						  <option value="4">Herramientas Eléctricas</option>
+						  <option value="5">Automáticos</option>
+						</select>
+					</div>
+
+					<div>
+						<select class="custom-select">
+						  <option selected>Seguridad</option>
+						  <option value="1">Protección Personal</option>
+						  <option value="2">Constrol de acceso</option>
+						  <option value="3">Protecciones</option>
+						  <option value="4">Seguridad Infantil</option>
+						  <option value="5">Seguridad para Autos</option>
+						</select>
+					</div>
+
+					<div>
+						<select class="custom-select">
+						  <option selected>Herramientas y Maquinarias</option>
+						  <option value="1">Herramientas Eléctricas</option>
+						  <option value="2">Herramientas Inalámbricas</option>
+						  <option value="3">Soldadoras</option>
+						  <option value="4">Compresor</option>
+						  <option value="5">Hidrolavadoras</option>
+						</select>
+					</div>
+				</div>
+
+
+				<div class="hijo2">
+					<form id="tomarDatos" onchange="cardsGraficasMiga()">
+					  <div class="form-group">
+					    <label for="formGroupExampleInput">Código M.I.G.A</label>
+					    <input type="text" class="form-control" onchange="detectarValueCode()" id="formGroupExampleInput1" placeholder="MIG_046">
+					  </div>
+					  <div class="form-group">
+					    <label for="formGroupExampleInput2">Material</label>
+					    <input type="text" class="form-control" onchange="detectarValueCode()" id="formGroupExampleInput2" placeholder="SINTRA 3MM + ADHESIVO MATE">
+					  </div>
+					  <div class="form-group">
+					    <label for="formGroupExampleInput2">Medida</label>
+					    <input type="text" class="form-control"  onchange="detectarValueCode()" id="formGroupExampleInput3" placeholder="30x20 cm">
+					  </div>
+					  <button type="button" class="btn btn-success" onclick="detectarBotonAgregar(`mouseover`)" id="botonAgregarALaLista">Agregar a la lista
+						<i class="fas fa-file"></i>
+					  </button>
+					  <div id="agregarBoton"></div> 
+					</form>
+				</div>
+
+				
+				<div class="hijo3"> 
+					<img src="../Imagenes/caja abierta.jpg" alt="gráfica bandera" id="imagenGrafica">
+				</div>
+
+				<div class="hijo4 responsive">
+					<table class="table table-hover">
+						<thead class="table-light shadow p-4 mb-4 bg-white">
+						  <tr>
+							<th class="sticky" scope="col">Código</th>
+							<th class="sticky" scope="col">Descripción</th>
+							<th class="sticky" scope="col">Instalación</th>
+							<th class="sticky" scope="col">Cantidad</th>
+							<th class="sticky" scope="col">
+								<i class="sticky fas fa-trash"></i>
+							</th>
+						  </tr>
+						</thead>
+						<tbody id="tabla" onchange="traerDatosTabla()">
+							<!-- <tr>
+								<th scope="row">Mig_046</th>
+								<td>Gráfica caja abierta</td>
+								<td class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" id="customSwitch1">
+									<label class="custom-control-label" for="customSwitch1">Si/No</label>
+								</td>
+								<td>
+									<select name="Cantidad">
+										<option value="Numero"> 1 </option>
+										<option value="Numero"> 2 </option>
+										<option value="Numero"> 3 </option>
+									</select>>
+								</td>
+								<td class="form-check-inline">
+									<label class="form-check-label">
+									  <input type="checkbox" class="form-check-input" value="">
+									</label>
+								</td>
+							</tr> -->
+						</tbody>
+					</table>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" id="hacerPedido">
+						Hacer Pedido
+					</button>
+					
+					<!-- Modal -->
+					<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Seguro que finalizaste el pedido</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									Al dar click en Guardar Cambios, se guardará y se cerrará este pedido.
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+									<button type="button" class="btn btn-primary">Guardar Cambios</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br>
+
+			
+		</main>
+			
+		<footer class="inferiorCompras">
+			<div class="containerFooter">
+				<div class="containerSuperior">
+					<div class="columna1">
+						<h4>Más Información</h4>
+						<p>Para más información, mira el video explicativo de como realizar el pedido de tu tienda en la sección principal. Revisa el calendario de pedidos trimestral para realizar tu compra con tiempo. Revisa el catálogo completo en la sección Mis pedidos. </p>
+					</div>
+						
+					<div class="columna2">
+						<h4>Suscríbete</h4>
+						<p>Ayúdanos a realizar en conjunto un proceso más sencillo y fácil de comprar la mantención de las gráficas y accesorios de las tiendas. Colabora de manera participativa y constructiva. </p>
+						<a href="#" class="btn btn-block btn-primary btn-info"><span class="glyphicon glyphicon-play"></span> suscríbete</a>
+							
+						<div class="container">  
+							<p>Se parte del nuevo catálogo <i class="fas fa-thumbs-up"></i></p> 
+						</div>
+					</div>
+						
+					<div class="columna3">
+						<h4>Contacto</h4>
+						<p>Siempre puedes consultar con las siguientes áreas: Área de Operaciones para dudas por proceso de compra del Miga. Área de Compras para dudas de SAP. Área Store Planning para dudas con el flujo Mesa de trabajo. Área de Diseño de Tiendas para dudas con gráficas y accesorios . </p>
+					</div>
+				</div>
+					
+				<div class="containerInferior">
+					<small class="copyright">
+						Todos los derechos reservados
+					</small>
+					<small class="Información">
+						<p>Autor: Paulina González</p> 
+					</small>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="../js/main.js"></script>
+	
+	
+	</body>
+
+</html>

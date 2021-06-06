@@ -1,0 +1,204 @@
+{
+    "categoria" : [
+    {
+        "accesoSala" : "AccesoSala",
+        "automovil" : "Automóvil",
+        "aseo" : "Aseo",
+        "bañoYCocina" : "Baño y cocina",
+        "cajas" : "Cajas",
+        "carpa" : "Carpa",
+        "casaInteligente" : "Casa Inteligente",
+        "centroDeProyectos" : "Centro de Proyectos",
+        "decoracion" : "Decoración"
+
+    },
+    {
+        "Dimensionado" : "Dimensionado",
+        "Arriendo" : "Arriendo",
+        "Herramientas" : "Herramientas",
+        "PatioConstructor" : "Patio Constructor"
+    }   
+    ],
+
+    "graficaMiga" : [
+    {
+        "codigo" : "MIGA0001",
+        "descripcion" : "Huinchas Mampara",
+        "material" : "Floorgraphic",
+        "medidaAncho" : 1.0,
+        "medidaAlto" : 20,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+    },
+    {
+        "codigo" : "MIGA0067",
+        "descripcion" : "Restricciones HC",
+        "material" : "Floorgraphic",
+        "medidaAncho" : 15,
+        "medidaAlto" : 77,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA0085",
+        "descripcion" : "Tarjeta de pago HC",
+        "material" : "Floorgraphic",
+        "medidaAncho" : 15,
+        "medidaAlto" : 65,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA0205",
+        "descripcion" : "Acceso mampara Wifi (1)",
+        "material" : "Floorgraphic",
+        "medidaAncho" : 33,
+        "medidaAlto" : 33,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA0206",
+        "descripcion" : "Acceso mampara Wifi (2)",
+        "material" : "Floorgraphic",
+        "medidaAncho" : 33,
+        "medidaAlto" : 33,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA0411",
+        "descripcion" : "Restricciones CO",
+        "material" : "Floorgraphic",
+        "medidaAncho" : 15,
+        "medidaAlto" : 77,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA0710",
+        "descripcion" : "Carros Boston PBG",
+        "material" : "Trovicel 3 mm + Adhesivo IJ15-20 + Troquel Tiro/Retiro",
+        "medidaAncho" : 45,
+        "medidaAlto" : 14,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA0711",
+        "descripcion" : "Carros Normal PBG",
+        "material" : "Trovicel 3 mm + Adhesivo IJ15-20 + Troquel Tiro/Retiro",
+        "medidaAncho" : 27,
+        "medidaAlto" : 27,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA0713",
+        "descripcion" : "Fila Preferencial HC Agendamiento",
+        "material" : "Pendón Roller Retráctil",
+        "medidaAncho" : 1.0,
+        "medidaAlto" : 2.0,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA0713",
+        "descripcion" : "Fila Preferencial HC Agendamiento",
+        "material" : "Pendón Roller Retráctil",
+        "medidaAncho" : 1.0,
+        "medidaAlto" : 2.0,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA0779",
+        "descripcion" : "Fila Preferencial CO",
+        "material" : "Pendón Roller Retráctil",
+        "medidaAncho" : 1.0,
+        "medidaAlto" : 2.0,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA0781",
+        "descripcion" : "Fila Preferencial HC",
+        "material" : "Pendón Roller Retráctil",
+        "medidaAncho" : 1.0,
+        "medidaAlto" : 2.0,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA0935",
+        "descripcion" : "Pendón Agendamiento",
+        "material" : "Pendón Roller Retráctil",
+        "medidaAncho" : 1.0,
+        "medidaAlto" : 2.0,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA1064",
+        "descripcion" : "33 Piso Distanciamiento Acceso a Sala",
+        "material" : "Floorgraphic + Troquel",
+        "medidaAncho" : 43,
+        "medidaAlto" : 43,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA1065",
+        "descripcion" : "33 Piso Distanciamiento Acceso a Sala 1,5",
+        "material" : "Floorgraphic + Troquel",
+        "medidaAncho" : 43,
+        "medidaAlto" : 43,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA1066",
+        "descripcion" : "Roller Protocolo CO",
+        "material" : "Pendón Roller Retráctil",
+        "medidaAncho" : 1.0,
+        "medidaAlto" : 2.0,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA1067",
+        "descripcion" : "Roller Protocolo HC",
+        "material" : "Pendón Roller Retráctil",
+        "medidaAncho" : 1.0,
+        "medidaAlto" : 2.0,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA1068",
+        "descripcion" : "Rompefila 1mt Distancia",
+        "material" : "Trovicel 3 mm + Adhesivo IJ12-20 Tito/Retiro",
+        "medidaAncho" : 20,
+        "medidaAlto" : 60,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA1069",
+        "descripcion" : "Rompefila 1,5 mt Distancia",
+        "material" : "Trovicel 3 mm + Adhesivo IJ12-20 Tito/Retiro",
+        "medidaAncho" : 20,
+        "medidaAlto" : 60,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    },
+    {
+        "codigo" : "MIGA1070",
+        "descripcion" : "Rompefila Autoservicio",
+        "material" : "Trovicel 3 mm + Adhesivo IJ12-20 Tito/Retiro",
+        "medidaAncho" : 20,
+        "medidaAlto" : 60,
+        "imagen" : "../Imagenes/caja abierta.jpg"
+
+    }
+    ]   
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Catálogo M.I.G.A</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel = "preconnect" href = "https://fonts.gstatic.com">
+		<link href = "https://fonts.googleapis.com/css2? family = Poppins & display = swap" rel = "hoja de estilo ">
+
+		<link rel = "preconnect" href = "https://fonts.gstatic.com">
+		<link href = "https://fonts.googleapis.com/css2? family = Poppins: wght @ 200; 400 & family = Arena movediza: wght @ 500 & display = swap "rel =" stylesheet ">
+
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+		<!------------------------------------SEO------------------------------------>
+
+		<meta name="description" content="Página sobre catálogo de compra para la mantención de gráficas en tiendas de Sodimac"> <!-- para que a página pueda ser buscada desde un explorador -->
+		<meta name="keywords" content="catálogo, sodimac, homecenter, mantanción, gráficas, mantención accesorios, flujo mesa, flujo estandar"> <!-- palabras claves de búsqueda -->
+		<meta name="author" content="Paulina González">
+
+
+		<!--------------------------------OPEN GRAPH--------------------------------->
+
+		<meta property="og:locale" content="es_es">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Página catálogo Miga">
+		<meta property="og:description" content="Visita el catálogo Miga">
+		<meta property="og:url" content="http://catálogomigapaulinagonzález.com">
+		<meta property="og:url" content="https://pauligonz.github.io/sitio_web_paulig/">
+		<meta property="og:image" content="https://www.sodimac.cl/sodimac-cl/"> <!-- 1 de 2, o imagen o video -->
+		<meta property="og:video" content="video/video.mp4"> <!-- 1 de 2, o imagen o video -->
+
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-between">
+					<div class="hijoNav">
+						<a class="navbar-brand-sm" href="../index.html">
+							<img src="../Imagenes/casita sodimac.png" alt="logo" style="width:45px;">
+						</a>
+						<span class="navbar-text">Catálogo Miga
+						</span>
+					</div>
+					<form class="hijoNav form-inline-sm" action="/action_page.php">
+						<input class="form-control mr-sm-2" type="text" placeholder="Search">
+						<button class="btn btn-primary" type="submit">Search</button>
+					</form>
+				</nav>
+			</div>
+			
+		</header>
+
+
+		<main>
+			<div class="container">
+				<div class="divMainIndex">
+					<nav class="navbar navbar-expand-sm bg-light justify-content-center">
+						<ul class="nav nav-pills-sm">
+							<li class="nav-item">
+								<a class="nav-link" href="Compras.html">Compras</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="Categorias.html">Categorías</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="Mis pedidos.html">Mis pedidos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="Contactanos.html">Contáctanos</a>
+							</li>
+							<li class="nav-item dropdown"> <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Feedback</a>
+								
+								<div class="dropdown-menu">
+									<a href="feedback.html" class="dropdown-item">Que te gustó</a>
+									<a href="feedback.html" class="dropdown-item">Sugerencias</a>	
+								</div>  
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../index.html"><i class="fas fa-home"></i></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="imagenPedido container">
+				<img src="../Imagenes/proveedor-entregando-producto.jpeg" alt="imagenDespacho">
+			</div>
+
+			<div class="contenedorPedido">
+				<div class="selectorPeriodo">
+					<form>
+						<select name="cars" class="custom-select">
+						  <option selected>Selecciona el período</option>
+						  <option value="mes">Marzo</option>
+						  <option value="mes">Junio</option>
+						  <option value="mes">Octubre</option>
+						</select>
+					</form>
+				</div>
+	
+				<div class="contenedorTipoPedido">
+					<style type="text/css" scoped></style>
+					
+					<nav id="navbar-example2" class="navbar navbar-light bg-light">
+					  <h3 class="navbar-brand">Tipo de pedido</h3>
+					  <ul class="nav nav-pills">
+						<li class="nav-item"><a class="nav-link" href="#verse1">Flujo Estandar</a></li>
+						<li class="nav-item"><a class="nav-link" href="#verse2">Flujo mesa</a></li>
+					  </ul>
+					</nav>
+					<div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+					  	<h4 id="verse1">Pedido Marzo</h4>
+						<form>
+							<select name="cars" class="custom-select">
+							<option selected>Selecciona la tienda</option>
+							<option value="tienda">3 SCO Viña del Mar</option>
+							<option value="tienda">4 SHC Calera</option>
+							<option value="tienda">5 SHC Antofagasta</option>
+							<option value="tienda">7 SHC Osorno</option>
+							<option value="tienda">9 SHC Los Angeles</option>
+							<option value="tienda">11 SHC Iquique</option>
+							<option value="tienda">12 SHC San Miguel</option>
+							<option value="tienda">13 SHC Chiloé</option>
+							<option value="tienda">16 SHC San Felipe</option>
+							<option value="tienda">19 SHC Valdivia</option>
+							<option value="tienda">20 SHC Viña del Mar</option>
+							<option value="tienda">21 SCO Cantagallo</option>
+							<option value="tienda">23 SHC San Bernardo</option>
+							<option value="tienda">24 SHC Punta Arenas</option>
+							<option value="tienda">26 SCO Rancagua</option>
+							<option value="tienda">27 SHC Calama</option>
+							<option value="tienda">29 SCO Valparaíso</option>
+							<option value="tienda">32 SHC Arica</option>
+							<option value="tienda">33 SHC Ñuñoa</option>
+							<option value="tienda">34 SHC Las Condes</option>
+							<option value="tienda">35 SHC Curicó</option>
+							<option value="tienda">37 SHC Coyhaique</option>
+							<option value="tienda">39 SHC La Serena</option>
+							<option value="tienda">40 SCO Antofagasta</option>
+							<option value="tienda">41 SHC Puerto Montt</option>
+							<option value="tienda">43 SHC Talca</option>
+							<option value="tienda">44 SHC Temuco Cautín</option>
+							<option value="tienda">51 SHC Chillán </option>
+							<option value="tienda">54 SHC Nueva La Florida</option>
+							<option value="tienda">55 SHC Linares</option>
+							<option value="tienda">57 SHC Copiapó</option>
+							<option value="tienda">58 SHC Angol</option>
+							<option value="tienda">59 SHC Villarrica</option>
+							<option value="tienda">60 SCO Vallenar</option>
+							<option value="tienda">63 SHC Huechuraba</option>
+							<option value="tienda">66 SHC Ñuble</option>
+							<option value="tienda">67 SHC La Reina</option>
+							<option value="tienda">68 RE Cauquenes</option>
+							<option value="tienda">70 SHC Estación Central</option>
+							<option value="tienda">74 SHC El Bosque</option>
+							<option value="tienda">75 SHC Puente Alto</option>
+							<option value="tienda">79 SHC Kennedy</option>
+							<option value="tienda">81 SHC Mall Plaza El Trébol</option>
+							<option value="tienda">83 SHC Rancagua</option>
+							<option value="tienda">88 SHC Maipú</option>
+							<option value="tienda">90 SHC El Belloto</option>
+							<option value="tienda">93 SHC Autopista Talcahuano</option>
+							<option value="tienda">95 SHC Plaza Vespucio</option>
+							<option value="tienda">96 SHC Cerrillos</option>
+							<option value="tienda">97 SHC Reñaca</option>
+							<option value="tienda">98 SHC Coquimbo</option>
+							<option value="tienda">713 SHC San Antonio</option>
+							<option value="tienda">714 SHC Melipilla</option>
+							<option value="tienda">716 SHC Santa Cruz</option>
+							<option value="tienda">723 SHC Quilicura</option>
+							<option value="tienda">724 SHC Mall Bío Bío </option>
+							<option value="tienda">725 SHC Quinta Vergara</option>
+							<option value="tienda">726 SHC Tobalaba</option>
+							<option value="tienda">727 SHC Talca-Colín</option>
+							<option value="tienda">728 SHC Alto Hospicio</option>
+							<option value="tienda">729 SHC Ovalle</option>
+							<option value="tienda">730 SHC Coronel</option>
+							<option value="tienda">731 SHC San Fernando</option>
+							<option value="tienda">734 SHC Quillota</option>
+							<option value="tienda">735 Homy Plaza Egaña</option>
+							<option value="tienda">737 SHC Talagante</option>
+							<option value="tienda">738 SHC Mall Plaza Los Dominicos</option>
+							<option value="tienda">739 SHC Copiapó Cordillera</option>
+							<option value="tienda">742 SHC La Serena Balmaceda</option>
+							<option value="tienda">743 SHC Antofagasta La Portada (Proyecto)</option>
+							<option value="tienda">745 SHC Independencia </option>
+							<option value="tienda">746 SHC Quilín</option>
+							<option value="tienda">747 SHC Temuco Los Pablos (Proyecto)</option>
+							<option value="tienda">748 SHC Chicureo Express</option>
+							</select>
+						</form>
+					  
+						<h4 id="verse2">Pedido Junio</h4>
+						<form>
+							<select name="cars" class="custom-select">
+							<option selected>Selecciona la tienda</option>
+							<option value="tienda">3 SCO Viña del Mar</option>
+							<option value="tienda">4 SHC Calera</option>
+							<option value="tienda">5 SHC Antofagasta</option>
+							<option value="tienda">7 SHC Osorno</option>
+							<option value="tienda">9 SHC Los Angeles</option>
+							<option value="tienda">11 SHC Iquique</option>
+							<option value="tienda">12 SHC San Miguel</option>
+							<option value="tienda">13 SHC Chiloé</option>
+							<option value="tienda">16 SHC San Felipe</option>
+							<option value="tienda">19 SHC Valdivia</option>
+							<option value="tienda">20 SHC Viña del Mar</option>
+							<option value="tienda">21 SCO Cantagallo</option>
+							<option value="tienda">23 SHC San Bernardo</option>
+							<option value="tienda">24 SHC Punta Arenas</option>
+							<option value="tienda">26 SCO Rancagua</option>
+							<option value="tienda">27 SHC Calama</option>
+							<option value="tienda">29 SCO Valparaíso</option>
+							<option value="tienda">32 SHC Arica</option>
+							<option value="tienda">33 SHC Ñuñoa</option>
+							<option value="tienda">34 SHC Las Condes</option>
+							<option value="tienda">35 SHC Curicó</option>
+							<option value="tienda">37 SHC Coyhaique</option>
+							<option value="tienda">39 SHC La Serena</option>
+							<option value="tienda">40 SCO Antofagasta</option>
+							<option value="tienda">41 SHC Puerto Montt</option>
+							<option value="tienda">43 SHC Talca</option>
+							<option value="tienda">44 SHC Temuco Cautín</option>
+							<option value="tienda">51 SHC Chillán </option>
+							<option value="tienda">54 SHC Nueva La Florida</option>
+							<option value="tienda">55 SHC Linares</option>
+							<option value="tienda">57 SHC Copiapó</option>
+							<option value="tienda">58 SHC Angol</option>
+							<option value="tienda">59 SHC Villarrica</option>
+							<option value="tienda">60 SCO Vallenar</option>
+							<option value="tienda">63 SHC Huechuraba</option>
+							<option value="tienda">66 SHC Ñuble</option>
+							<option value="tienda">67 SHC La Reina</option>
+							<option value="tienda">68 RE Cauquenes</option>
+							<option value="tienda">70 SHC Estación Central</option>
+							<option value="tienda">74 SHC El Bosque</option>
+							<option value="tienda">75 SHC Puente Alto</option>
+							<option value="tienda">79 SHC Kennedy</option>
+							<option value="tienda">81 SHC Mall Plaza El Trébol</option>
+							<option value="tienda">83 SHC Rancagua</option>
+							<option value="tienda">88 SHC Maipú</option>
+							<option value="tienda">90 SHC El Belloto</option>
+							<option value="tienda">93 SHC Autopista Talcahuano</option>
+							<option value="tienda">95 SHC Plaza Vespucio</option>
+							<option value="tienda">96 SHC Cerrillos</option>
+							<option value="tienda">97 SHC Reñaca</option>
+							<option value="tienda">98 SHC Coquimbo</option>
+							<option value="tienda">713 SHC San Antonio</option>
+							<option value="tienda">714 SHC Melipilla</option>
+							<option value="tienda">716 SHC Santa Cruz</option>
+							<option value="tienda">723 SHC Quilicura</option>
+							<option value="tienda">724 SHC Mall Bío Bío </option>
+							<option value="tienda">725 SHC Quinta Vergara</option>
+							<option value="tienda">726 SHC Tobalaba</option>
+							<option value="tienda">727 SHC Talca-Colín</option>
+							<option value="tienda">728 SHC Alto Hospicio</option>
+							<option value="tienda">729 SHC Ovalle</option>
+							<option value="tienda">730 SHC Coronel</option>
+							<option value="tienda">731 SHC San Fernando</option>
+							<option value="tienda">734 SHC Quillota</option>
+							<option value="tienda">735 Homy Plaza Egaña</option>
+							<option value="tienda">737 SHC Talagante</option>
+							<option value="tienda">738 SHC Mall Plaza Los Dominicos</option>
+							<option value="tienda">739 SHC Copiapó Cordillera</option>
+							<option value="tienda">742 SHC La Serena Balmaceda</option>
+							<option value="tienda">743 SHC Antofagasta La Portada (Proyecto)</option>
+							<option value="tienda">745 SHC Independencia </option>
+							<option value="tienda">746 SHC Quilín</option>
+							<option value="tienda">747 SHC Temuco Los Pablos (Proyecto)</option>
+							<option value="tienda">748 SHC Chicureo Express</option>
+							</select>
+						</form>
+		
+						<h4 id="verse2">Pedido Octubre</h4>
+						<form>
+							<select name="cars" class="custom-select">
+							<option selected>Selecciona la tienda</option>
+							<option value="tienda">3 SCO Viña del Mar</option>
+							<option value="tienda">4 SHC Calera</option>
+							<option value="tienda">5 SHC Antofagasta</option>
+							<option value="tienda">7 SHC Osorno</option>
+							<option value="tienda">9 SHC Los Angeles</option>
+							<option value="tienda">11 SHC Iquique</option>
+							<option value="tienda">12 SHC San Miguel</option>
+							<option value="tienda">13 SHC Chiloé</option>
+							<option value="tienda">16 SHC San Felipe</option>
+							<option value="tienda">19 SHC Valdivia</option>
+							<option value="tienda">20 SHC Viña del Mar</option>
+							<option value="tienda">21 SCO Cantagallo</option>
+							<option value="tienda">23 SHC San Bernardo</option>
+							<option value="tienda">24 SHC Punta Arenas</option>
+							<option value="tienda">26 SCO Rancagua</option>
+							<option value="tienda">27 SHC Calama</option>
+							<option value="tienda">29 SCO Valparaíso</option>
+							<option value="tienda">32 SHC Arica</option>
+							<option value="tienda">33 SHC Ñuñoa</option>
+							<option value="tienda">34 SHC Las Condes</option>
+							<option value="tienda">35 SHC Curicó</option>
+							<option value="tienda">37 SHC Coyhaique</option>
+							<option value="tienda">39 SHC La Serena</option>
+							<option value="tienda">40 SCO Antofagasta</option>
+							<option value="tienda">41 SHC Puerto Montt</option>
+							<option value="tienda">43 SHC Talca</option>
+							<option value="tienda">44 SHC Temuco Cautín</option>
+							<option value="tienda">51 SHC Chillán </option>
+							<option value="tienda">54 SHC Nueva La Florida</option>
+							<option value="tienda">55 SHC Linares</option>
+							<option value="tienda">57 SHC Copiapó</option>
+							<option value="tienda">58 SHC Angol</option>
+							<option value="tienda">59 SHC Villarrica</option>
+							<option value="tienda">60 SCO Vallenar</option>
+							<option value="tienda">63 SHC Huechuraba</option>
+							<option value="tienda">66 SHC Ñuble</option>
+							<option value="tienda">67 SHC La Reina</option>
+							<option value="tienda">68 RE Cauquenes</option>
+							<option value="tienda">70 SHC Estación Central</option>
+							<option value="tienda">74 SHC El Bosque</option>
+							<option value="tienda">75 SHC Puente Alto</option>
+							<option value="tienda">79 SHC Kennedy</option>
+							<option value="tienda">81 SHC Mall Plaza El Trébol</option>
+							<option value="tienda">83 SHC Rancagua</option>
+							<option value="tienda">88 SHC Maipú</option>
+							<option value="tienda">90 SHC El Belloto</option>
+							<option value="tienda">93 SHC Autopista Talcahuano</option>
+							<option value="tienda">95 SHC Plaza Vespucio</option>
+							<option value="tienda">96 SHC Cerrillos</option>
+							<option value="tienda">97 SHC Reñaca</option>
+							<option value="tienda">98 SHC Coquimbo</option>
+							<option value="tienda">713 SHC San Antonio</option>
+							<option value="tienda">714 SHC Melipilla</option>
+							<option value="tienda">716 SHC Santa Cruz</option>
+							<option value="tienda">723 SHC Quilicura</option>
+							<option value="tienda">724 SHC Mall Bío Bío </option>
+							<option value="tienda">725 SHC Quinta Vergara</option>
+							<option value="tienda">726 SHC Tobalaba</option>
+							<option value="tienda">727 SHC Talca-Colín</option>
+							<option value="tienda">728 SHC Alto Hospicio</option>
+							<option value="tienda">729 SHC Ovalle</option>
+							<option value="tienda">730 SHC Coronel</option>
+							<option value="tienda">731 SHC San Fernando</option>
+							<option value="tienda">734 SHC Quillota</option>
+							<option value="tienda">735 Homy Plaza Egaña</option>
+							<option value="tienda">737 SHC Talagante</option>
+							<option value="tienda">738 SHC Mall Plaza Los Dominicos</option>
+							<option value="tienda">739 SHC Copiapó Cordillera</option>
+							<option value="tienda">742 SHC La Serena Balmaceda</option>
+							<option value="tienda">743 SHC Antofagasta La Portada (Proyecto)</option>
+							<option value="tienda">745 SHC Independencia </option>
+							<option value="tienda">746 SHC Quilín</option>
+							<option value="tienda">747 SHC Temuco Los Pablos (Proyecto)</option>
+							<option value="tienda">748 SHC Chicureo Express</option>
+							</select>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer>
+			<div class="containerFooter">
+				<div class="containerSuperior">
+					<div class="columna1">
+						<h4>Más Información</h4>
+						<p>Para más información, mira el video explicativo de como realizar el pedido de tu tienda en la sección principal. Revisa el calendario de pedidos trimestral para realizar tu compra con tiempo. Revisa el catálogo completo en la sección Mis pedidos. </p>
+					</div>
+						
+					<div class="columna2">
+						<h4>Suscríbete</h4>
+						<p>Ayúdanos a realizar en conjunto un proceso más sencillo y fácil de comprar la mantención de las gráficas y accesorios de las tiendas. Colabora de manera participativa y constructiva. </p>
+						<a href="#" class="btn btn-block btn-primary btn-info"><span class="glyphicon glyphicon-play"></span> suscríbete</a>
+							
+						<div class="container">  
+							<p>Se parte del nuevo catálogo <i class="fas fa-thumbs-up"></i></p> 
+						</div>
+					</div>
+						
+					<div class="columna3">
+						<h4>Contacto</h4>
+						<p>Siempre puedes consultar con las siguientes áreas: Área de Operaciones para dudas por proceso de compra del Miga. Área de Compras para dudas de SAP. Área Store Planning para dudas con el flujo Mesa de trabajo. Área de Diseño de Tiendas para dudas con gráficas y accesorios . </p>
+					</div>
+				</div>
+					
+				<div class="containerInferior">
+					<small class="copyright">
+						Todos los derechos reservados
+					</small>
+					<small class="Información">
+						<p>Autor: Paulina González</p> 
+					</small>
+				</div>
+			</div>
+			
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</body>
+
+</html>
