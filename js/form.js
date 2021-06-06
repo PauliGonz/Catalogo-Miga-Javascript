@@ -1,33 +1,12 @@
+// EJERCICIO DE JQUERY
 function validarFormulario(e){
-  // e.preventDefault();
-  let datos={
-      nombre : $(`#name`).val(),
-      cargo : $(`#cargo`).val(),
-      email : $(`#email`).val(),
-      tienda : Number($(`#tienda`).val())
+    e.preventDefault();
+    let nombre = $(`#name`).val();
+    let cargo = $(`#cargo`).val();
+    let email = $(`#email`).val();
+    let tienda = Number($(`#tienda`).val()); 
+    console.log(`Hola ${nombre}, tu cargo es ${cargo} ,tu correo ${email} quedará registrado junto a tu tienda número ${tienda}`);
   }
-ponerDatos(datos)
-}
-
-function ponerDatos(datos){
-  let datosObtenidos=localStorage.datosDelUsuario;
-  console.log(datosObtenidos)
-  if(datosObtenidos != null)
- {
-   personas.push(datosObtenidos);
-   console.log(personas)
-   personas.push(datos);
-   console.log(personas);
-   localStorage.setItem("datosDelUsuario",JSON.stringify(personas))
-   console.log(localStorage);
- }
- else
-{
-  personas.push(datos);
-  localStorage.setItem("datosDelUsuario",JSON.stringify(personas))
-}
-  console.log(`Hola ${datos.nombre}, tu cargo es ${datos.cargo} ,tu correo ${datos.email} quedará registrado junto a tu tienda número ${datos.tienda}`);
-}
   
   
   /**
