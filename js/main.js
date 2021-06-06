@@ -1,11 +1,3 @@
-// async function llamarDatos(nombre){
-//   let response = await fetch(`../secciones/datos.json`);
-//   let data = await response.json();
-//   console.log(data[nombre]);
-//   $(`#accesoSala`).html(data[nombre].Acceso Sala);
-// }
-
-
 /**VARIABLES GENERALES */
 let acumuladorObjetoGrafico = [];
 let acumuladorObjetoCategoria = [];
@@ -13,7 +5,7 @@ let acumuladorObjetoCategoria = [];
 let acumuladorStorageCategoria = localStorage.listaCategorias
 // console.log(acumuladorStorageCategoria)
 let acumuladorStorageGrafico = localStorage.listaGraficas
-// console.log(acumuladorStorageGrafico)
+console.log(acumuladorStorageGrafico)
 
 function localStorage(){
   AcumuladorObjetoGrafico = [...JSON.parse(acumuladorStorageGrafico)],
@@ -38,26 +30,26 @@ class GraficaMiga {
   }
 }
 
-// function traerDatosJson(){
-//   fetch(`/secciones/datos.json`)
-//   .then(res => res.json())
-//   .then(res => {
-//     res.forEach(element => {
-//       let nuevaGrafica = new GraficaMiga(
-//         element.codigo,
-//         element.descripcion,
-//         element.material,
-//         element.medidaAncho,
-//         element.medidaAlto,
-//         element.imagen,   
-//         )
-//         acumuladorObjetoGrafico.push(nuevaGrafica)
-//     })
-//     console.log(acumuladorObjetoGrafico)
-//     mostrarDatosCategorias()
-//     cardsGraficasCategoria()
-// })
-// }
+function traerDatosJson(){
+  fetch(`/secciones/datos.json`)
+  .then(res => res.json())
+  .then(res => {
+    res.forEach(element => {
+      let nuevaGrafica = new GraficaMiga(
+        element.codigo,
+        element.descripcion,
+        element.material,
+        element.medidaAncho,
+        element.medidaAlto,
+        element.imagen,   
+        )
+        acumuladorObjetoGrafico.push(nuevaGrafica)
+    })
+    console.log(acumuladorObjetoGrafico)
+    mostrarDatosCategorias()
+    cardsGraficasCategoria()
+})
+}
 
 /**APLICACION DE FETCH AL JSON*/
 let baseDeDatos = fetch(`../secciones/datos.json`)
@@ -104,9 +96,9 @@ function mostrarDatosCategorias(resultadoDelJson){
     });
   }
       
-    function cardsGraficasCategoria(){
+    function cardsGraficasCategoria(array){
       let acumuladorCategoria = ` `;
-      acumuladorObjetoCategoria.forEach(element => {
+      array.forEach(element => {
         acumuladorCategoria += `<div class="homecenter">
         <p class="textoHomecenter"> Categorías aréa HC </p>
         <select class="custom-select">
@@ -118,14 +110,14 @@ function mostrarDatosCategorias(resultadoDelJson){
         </select>
         </div>`
       })
-      localStorage.setItem("listaCategorias", JSON.stringify(acumuladorObjetoCategoria));
-      localStorage()
+      // localStorage.setItem("listaCategorias", JSON.stringify(acumuladorObjetoCategoria));
+      // localStorage()
       $(`#accesoSala`).html(acumuladorCategoria);
     }
     
-    function cardsGraficasObjeto(){
+    function cardsGraficasObjeto(array){
       let acumuladorGrafica = ` `;
-      acumuladorObjetoGrafico.forEach(element => {
+      array.forEach(element => {
         acumuladorGrafica += `<form id="tomarDatos">
         <div class="form-group">
         <label for="formGroupExampleInput">Código M.I.G.A</label>
@@ -147,7 +139,7 @@ function mostrarDatosCategorias(resultadoDelJson){
         
         </form>`
       })
-      localStorage.setItem("listaGraficas", JSON.stringify(acumuladorObjetoGrafico))
+      // localStorage.setItem("listaGraficas", JSON.stringify(acumuladorObjetoGrafico))
       $(`#tomarDatos`).html(acumuladorGrafica);
     }
 
@@ -220,4 +212,39 @@ function detectarValueMaterial() {
 function detectarValueMedida() {
   let dato = document.getElementById("formGroupExampleInput3")
   console.log(dato.value)
+}
+
+function botonMercadoPago(){
+  let botonCompra = $(`#botonMercadoPago`).on(`click`)
+  botonMP()
+  console.log(botonCompra)
+}
+
+// API MERCADO PAGO
+let json = {
+  items : [
+  {
+    title : "GraficaMiga",
+    description: "Grafica Acceso",
+    picture_url: "http://www.myapp.com/myimage.jpg",
+    category_id: "categoría Homecenter",
+    quantity: 1,
+    currency_id: "CLP",
+    unit_price: 30
+  },
+  ],
+};
+
+async function botonMP() {
+  let data = await fetch ('https://api.mercadopago.com/checkout/preferences',{
+    method: 'POST',
+    headers: {
+      "Authorization": "Bearer TEST-8829919419990586-060600-f777b8ed75cfa6c50f745460435771cc-53559063"  
+    },
+    body: JSON.stringify(json),
+  }); 
+  let responseMP = await data.json()
+  window.open(responseMP.init_point)
+  location.href = responseMP.init_point
+  console.log(responseMP.init_point)
 }
